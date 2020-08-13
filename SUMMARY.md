@@ -4,5 +4,5 @@
 
 ## Vue Basic
 
-* [Boolean](vue-basic/boolean.md)
+* [Boolean v-if v-show / v-for](vue-basic/boolean.md)
 

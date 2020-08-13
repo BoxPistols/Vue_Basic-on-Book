@@ -1,22 +1,23 @@
 ---
-description: if else v-show
+description: v-if v-else / v-show / v-for
 ---
 
-# Boolean
+# Boolean v-if v-show / v-for
 
 ```markup
 <template>
   <div class="bool">
-    <h2>v-if v-else / data: bool</h2>
+
+    <h2>v-if v-else / data: bool</h2>    
     <label><input type="checkbox" v-model="myVisible" />表示する</label>
     <p v-if="myVisible">ON!</p>
     <p v-else>Off</p>
 
-    <h3>v-show</h3>
+    <h2>v-show</h2>
     <p v-show="vShow">v-show is display: on/off</p>
 
     <h2>Like</h2>
-    <button v-if="isShow" @click="like">Like!</button>
+    <button v-if="isShow" @click="like">Like! for Method</button>
 
     <h2>Loop</h2>
     <table>
@@ -25,6 +26,7 @@ description: if else v-show
         <td>{{ item.price }}</td>
       </tr>
     </table>
+
   </div>
 </template>
 
@@ -32,9 +34,12 @@ description: if else v-show
 export default {
   data() {
     return {
+      
+      // bool init
       myVisible: true,
       vShow: false,
       isShow: true,
+      
       // Array obj v-for
       objArray: [
         { name: "メロンパン", price: 100 },
