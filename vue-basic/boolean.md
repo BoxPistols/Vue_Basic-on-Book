@@ -1,8 +1,8 @@
 ---
-description: v-if v-else / v-show / v-for
+description: v-if v-else / v-show
 ---
 
-# Boolean v-if v-show / v-for
+# Boolean
 
 ```markup
 <template>
