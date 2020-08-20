@@ -2,7 +2,7 @@
 description: Object
 ---
 
-# Array
+# Loop/Array Object
 
 
 
