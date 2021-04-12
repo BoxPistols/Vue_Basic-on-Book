@@ -11,6 +11,6 @@
 
 ## Vue環境
 
-* [Untitled](vue-huan-jing/untitled.md)
+* [Vue + TypeScript](vue-huan-jing/untitled.md)
 * [VS Code](vue-huan-jing/vs-code.md)
 
