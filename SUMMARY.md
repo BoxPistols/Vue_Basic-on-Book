@@ -14,3 +14,7 @@
 * [Vue + TypeScript](vue-huan-jing/untitled.md)
 * [VS Code](vue-huan-jing/vs-code.md)
 
+## テンプレート構文
+
+* [Syntax Template](tenpurto/syntax-template.md)
+
