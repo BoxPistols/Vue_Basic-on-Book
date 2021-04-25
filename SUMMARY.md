@@ -4,6 +4,8 @@
 
 ## Vue Basic
 
+* [Props Parent to Child](vue-basic/props-parent-to-child.md)
+* [index](vue-basic/index.md)
 * [Boolean](vue-basic/boolean.md)
 * [Loop/Array Object](vue-basic/array.md)
 * [Model](vue-basic/model.md)
