@@ -81,3 +81,82 @@ export default {
 
 ```
 
+---
+
+## Brush Up
+
+![](../.gitbook/assets/image.png)
+
+### Parent
+
+```markup
+<!-- 親コンポーネント -->
+<template>
+    <div class="home">
+        <img alt="Vue logo" src="../assets/logo.png" />
+        <dev01 hero-message="I'm developer" :like="likeNumber" />
+        <dev01 hero-message="I'm designer" :like="likeNumber2" />
+        Like: <input type="number" v-model="likeNumber" />
+    </div>
+</template>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component'
+import Dev01 from '@/components/Dev01.vue'
+
+@Options({
+    data() {
+        return {
+            likeNumber: 50,
+            likeNumber2: 70,
+        }
+    },
+    components: {
+        Dev01,
+    },
+})
+export default class Home extends Vue {}
+</script>
+
+<style lang="scss" scoped>
+img {
+    max-width: 48px;
+}
+</style>
+
+```
+
+### Child
+
+```markup
+<!-- 子コンポーネント -->
+<template>
+    <div>
+        <h3>{{ heroMessage }} / Like: {{ like }} / halfNum: {{ halfNum }}</h3>
+    </div>
+</template>
+<script>
+export default {
+    props: {
+        heroMessage: String,
+        // like: Number,
+        like: {
+            type: Number,
+            // required: true,  *defaultかrequiedかどちらか単一選択
+            default: 0,
+        },
+    },
+    data() {
+        return {}
+    },
+    computed: {
+        halfNum() {
+            return this.like / 2
+        },
+    },
+    methods: {},
+}
+</script>
+
+```
+
