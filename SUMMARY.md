@@ -9,6 +9,7 @@
 * [Boolean](vue-basic/boolean.md)
 * [Loop/Array Object](vue-basic/array.md)
 * [Model](vue-basic/model.md)
+* [Watch](vue-basic/watch.md)
 * [LifeCycle](vue-basic/lifecycle.md)
 
 ## Vue環境
